@@ -6,3 +6,11 @@ body {
 .cat {
     font-family: fantasy;
 }
+
+li {
+    list-style-type: none;
+}
+
+.secret {
+    opacity: 0.5;
+}
