@@ -105,8 +105,18 @@ $(() => {
   $wand.insertAfter($pet);
   // add color
   $wand.css("color", "indigo");
-  $pet.remove()
+  //remove pet and place else where
+  $pet.remove();
   $pet.insertAfter($h2);
+  // return pet to original location
   $pet.remove();
   $pet.insertBefore($wand);
+
+  // Year 6
+  // hide items and reveal them
+  $(".secret").hide("slow").delay(2000).show("slow");
+  // give leash the class of cabbage and remove it
+  $li5.addClass("cabbage");
+  $li5.removeClass("cabbage");
+  
 });
