@@ -118,5 +118,13 @@ $(() => {
   // give leash the class of cabbage and remove it
   $li5.addClass("cabbage");
   $li5.removeClass("cabbage");
-  
+
+  // Year 7
+  // update class schedule
+  $h5.text('Fall 2018')
+  // buy more butter beer
+  $newLi = $('<li>').text('More butter beer');
+  $newLi.insertBefore($li2);
+  // replace trunk with chest
+  $ul.attr('storage', 'chest');
 });
