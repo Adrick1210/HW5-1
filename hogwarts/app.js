@@ -20,8 +20,8 @@ $(() => {
   $h3 = $("<h3>").text("Gryffindor");
   $container.append($h3);
   // add h4 for pet
-  $h4 = $("<h4>").addClass("cat").text("Squeaks");
-  $container.append($h4);
+  $pet = $("<h4>").addClass("cat").text("Squeaks");
+  $container.append($pet);
   $wand = $("<h4>").text("Holly Wand with Unicorn Hair Core");
   $container.append($wand);
 
@@ -60,40 +60,53 @@ $(() => {
   $container.append($h5);
   $h5.insertBefore($table);
   // make a thead element
-  $tr0= $('<tr>');
+  $tr0 = $("<tr>");
   // th elements
   $th1 = $("<th>").text("Day");
   $th2 = $("<th>").text("Classes");
   $tr0.append($th1, $th2);
   $table.append($tr0);
   // make tr element with two tds
-  $tr1 = $('<tr>');
-  $td1 = $('<td>').text("Monday");
-  $td2 = $('<td>').text("Herbology");
+  $tr1 = $("<tr>");
+  $td1 = $("<td>").text("Monday");
+  $td2 = $("<td>").text("Herbology");
   $tr1.append($td1, $td2);
   $table.append($tr1);
   // add more tr and td elements to Friday
-  $tr2 = $('<tr>');
-  $td3 = $('<td>').text("Tuesday");
-  $td4 = $('<td>').text("Divination");
+  $tr2 = $("<tr>");
+  $td3 = $("<td>").text("Tuesday");
+  $td4 = $("<td>").text("Divination");
   $tr2.append($td3, $td4);
   $table.append($tr2);
   //
-  $tr3 = $('<tr>');
-  $td5 = $('<td>').text("Wednesday");
-  $td6 = $('<td>').text("History of Magic");
+  $tr3 = $("<tr>");
+  $td5 = $("<td>").text("Wednesday");
+  $td6 = $("<td>").text("History of Magic");
   $tr3.append($td5, $td6);
   $table.append($tr3);
   //
-  $tr4 = $('<tr>');
-  $td7 = $('<td>').text("Thursday");
-  $td8 = $('<td>').text("Defense Against the Dark Arts");
+  $tr4 = $("<tr>");
+  $td7 = $("<td>").text("Thursday");
+  $td8 = $("<td>").text("Defense Against the Dark Arts");
   $tr4.append($td7, $td8);
   $table.append($tr4);
   //
-  $tr5 = $('<tr>');
-  $td9 = $('<td>').text("Friday");
-  $td10 = $('<td>').text("Quidditch practice");
+  $tr5 = $("<tr>");
+  $td9 = $("<td>").text("Friday");
+  $td10 = $("<td>").text("Quidditch practice");
   $tr5.append($td9, $td10);
   $table.append($tr5);
+
+  // Year 5
+  $wand.remove();
+  $li1.remove();
+  // new wand
+  $wand.text("My shiny new wand");
+  $wand.insertAfter($pet);
+  // add color
+  $wand.css("color", "indigo");
+  $pet.remove()
+  $pet.insertAfter($h2);
+  $pet.remove();
+  $pet.insertBefore($wand);
 });
