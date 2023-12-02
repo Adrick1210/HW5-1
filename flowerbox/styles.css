@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:opsz,wght@9..40,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+  background-color: whitesmoke;
+  font-family: 'open sans', sans-serif;
+}
+
+ul {
+  display: flex;
+  background-color: #92b2ba;
+  color: white;
+  justify-content: space-between;
+  height: 25px;
+  padding: 12px;
+  right: 10px;
+  left: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  right: 10px;
+  left: 10px;
+}
+
+.showcase {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.showcase img {
+  display: flex;
+  position: relative;
+  margin-top: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.showcase h1 {
+  position: absolute;
+  background-size: cover;
+  right: 80px;
+  bottom: 570px;
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 60px;
+  font-weight: 20px;
+  color: #92b2ba;
+  text-shadow: 2px 1px 1px white;
+}
+
+.showcase h2 {
+  position: absolute;
+  bottom: 550px;
+  right: 90px;
+  font-size: 15px;
+  padding: 6px;
+  background-color: white;
+  color: #f0a8bb; 
+}
