@@ -104,7 +104,7 @@ $(() => {
   $wand.text("My shiny new wand");
   $wand.insertAfter($pet);
   // add color
-  $wand.css("color", "indigo");
+  $wand.css("color", "red");
   //remove pet and place else where
   $pet.remove();
   $pet.insertAfter($h2);
