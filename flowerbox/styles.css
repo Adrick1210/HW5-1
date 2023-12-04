@@ -94,6 +94,7 @@ li {
 #card p {
   background-color: #f0a8bb;
   color: white;
+  font-weight: 800;
   display: flex;
   font-size: 15px;
   padding: 4px;
